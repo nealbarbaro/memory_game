@@ -2,27 +2,33 @@ body {
   background-color:gold;
 }
 #board {
-  width: 400px;
-  overflow: hidden;
-  margin: 50px auto;
+  width:400px;
+  overflow:hidden;
+  margin:50px auto;
 }
 #board .tile {
-  background: red;
+  background:#b80000;
 }
 #board .tile,
 #board .tile img {
   display:block;
-/*converts image from a inline level to a block level element, so you can do margin, padding, etc.*/
-  width: 100px;
-  float: left;
-  background: red;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
+  width:100px;
+  height:100px;
+  float:left;
   border-radius: 50%;
 }
 #board .tile img {
-  visibility: hidden;
+  visibility:hidden;
 }
 #board .tile.active img {
-  visibility: visible;
+  visibility:visible;
+}
+
+
+
+#board .tile.matched {
+  opacity:0.4;
+}
+#board .tile.matched img {
+  visibility:visible;
 }
